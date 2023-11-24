@@ -18,7 +18,7 @@ def select_start_and_goal(image):
 
     return start, goal
 
-path = r'C:\Users\lamto\OneDrive\Desktop\school3.png'
+path = r'E:/2023/4.Training/2.Python/LAM/pso/school3.png'
 image = cv2.imread(path)
 grid_height = 1
 grid_width = 1

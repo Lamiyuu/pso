@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-path = r'C:\Users\lamto\OneDrive\Desktop\school3.png'
+path = r'E:/2023/4.Training/2.Python/LAM/pso/school3.png'
 image = cv2.imread(path)
 class Environment:
     """Class to represent the environment in which the mobile robot is operating."""
