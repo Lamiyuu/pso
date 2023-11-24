@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 from pso import PSO
 import cv2
 import numpy as np
+
 plt.rcParams["figure.autolayout"] = True
+
 def select_start_and_goal(image):
     plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
     plt.title('Chọn điểm bắt đầu (click) và điểm kết thúc (click)')
@@ -15,6 +17,7 @@ def select_start_and_goal(image):
     goal = (int(goal[0][1] / grid_width), int(goal[0][0] / grid_height))
 
     return start, goal
+
 path = r'C:\Users\lamto\OneDrive\Desktop\school3.png'
 image = cv2.imread(path)
 grid_height = 1
