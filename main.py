@@ -19,15 +19,19 @@ def select_start_and_goal(image):
     return start, goal
 
 path = r'E:/2023/4.Training/2.Python/LAM/pso/school3.png'
+
 image = cv2.imread(path)
+
 grid_height = 1
 grid_width = 1
 start, goal = select_start_and_goal(image)
 num_rows = image.shape[0] // grid_height
 num_cols = image.shape[1] // grid_width
 grid = np.zeros((num_rows, num_cols))
+
 # Xác định ngưỡng để phân biệt giữa màu đen và màu trung bình của ô grid
 threshold_value = 220  # Giá trị ngưỡng (có thể điều chỉnh)
+
 for row in range(num_rows):
     for col in range(num_cols):
         top = row * grid_height
