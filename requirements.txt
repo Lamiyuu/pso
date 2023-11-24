@@ -1,8 +1,0 @@
-# This is configuration file for project
-### Image Processing Library
-matplotlib
-
-
-
-### Copy
-copy
